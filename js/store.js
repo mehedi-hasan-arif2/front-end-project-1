@@ -29,6 +29,11 @@ const loadphone = async (searchText) => {
     displayPhone(serverData.data.slice(0, 6)); // show only 6 initially
 
 // show all button setup
+let existingButton = document.getElementById("show-all-btn");
+if (existingButton) {
+  existingButton.remove(); // remove old button if it already exists
+}
+
 const showAllBtn = document.createElement("button");
 showAllBtn.id = "show-all-btn";
 showAllBtn.classList.add("btn");
@@ -80,7 +85,7 @@ const displayPhone = (data) => {
 }
 
 
-// ================= MODAL LOGIC =================
+// MODAL LOGIC 
 const modal = document.getElementById("myModal");
 const modalCloseBtn = document.getElementById("modalCloseBtn");
 
