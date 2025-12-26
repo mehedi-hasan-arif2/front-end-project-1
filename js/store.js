@@ -111,6 +111,7 @@ async function showDetails(phoneId) {
   modal.style.display = "block";
 }
 
+
 // close modal when clicking the X
 modalCloseBtn.onclick = function () {
   modal.style.display = "none";
