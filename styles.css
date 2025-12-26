@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+     font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(237, 216, 216);
+}
+
+header{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    background-color: rgb(48, 83, 222);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: rgb(21, 11, 131);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#highlight-section{
+    width: 70%;
+    margin: 50px auto;
+}
+
+#highlight-section > h2{
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 2px 2px 8px #DF4141;
+    margin-bottom: 25px;
+}
+
+#highlight-section > p{
+    margin: 0 auto;
+    width: 50%;
+    color: rgb(89, 85, 85);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#buy-now-button{
+    display: flex;
+    justify-content: center;
+}
+
+.buy-btn{
+    background-color: rgb(255, 87, 51);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.buy-btn:hover{
+    background-color: rgb(180, 50, 20);
+    cursor: pointer;
+    transition: 0.6s;
+    transform: scale(1.08);
+}
+
+#cover-image-section{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#cover-image-section img{
+    width: 1000px; 
+    max-height: 600px; 
+    object-fit: contain;
+}
+
+#search-section{
+    width: 70%;
+    margin: 50px auto;
+}
+
+#search-section > h2{
+    text-align: center;
+    margin-bottom: 25px;  
+}
+
+#search-container{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(237, 232, 192);
+    display: flex;
+}
+
+#search-bar{
+    width: 70%;
+}
+
+#search-bar > input[type="text"]{
+    padding: 15px;
+    border: none;
+    outline: none;
+    width: 60%;
+    background-color: rgb(237, 232, 192);
+
+}
+
+#search-button{
+    width : 30%;  
+    display: flex;
+    justify-content: end;
+}
+
+#card-section{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.card-image{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.card-image:hover{
+    background-color: #d7c2c2;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.card-image img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card-description{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(117, 108, 108);
+}
+
+.card-price{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card-button{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: right;
+}
+
+#loading-section{
+   width: 70%;
+   margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  --b: 8px; 
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%,#f03355) content-box;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  mask: 
+    repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),#000 calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect; 
+  animation:l4 1s infinite steps(10);
+}
+@keyframes l4 {to{transform: rotate(1turn)}}
+
+
+footer {
+  background-color: #0d6dfd15;
+  
+  padding: 60px 10%;
+}
+
+#upper-footer-section {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-heading {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.footer-tagline {
+  color: #706f6f;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#footer-social-icons {
+  display: flex;
+  align-items: center;
+}
+
+#footer-social-icons img {
+  width: 22px;
+  height: 22px;
+  margin-right: 20px;
+}
+
+#horizontal-line {
+  border-top: 1px solid #cfcfcf;
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#footer-nav div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+#footer-nav div a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MODAL STYLES */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#modalCloseBtn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+#modalCloseBtn:hover {
+  color: red;
+}
+
+.modal-content img {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* show-all button center */
+#show-all-btn {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
