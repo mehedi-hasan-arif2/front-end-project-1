@@ -36,6 +36,7 @@ if (existingButton) {
 
 const showAllBtn = document.createElement("button");
 showAllBtn.id = "show-all-btn";
+showAllBtn.classList.add("btn", "btn-sm");
 showAllBtn.classList.add("btn");
 showAllBtn.textContent = "Show All Results";
 showAllBtn.onclick = () => {
